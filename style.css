@@ -2,6 +2,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1;
+    padding-bottom: 100px;
   }
   
   textarea{
@@ -68,4 +69,83 @@ body {
   .saveBtn i:hover {
     font-size: 20px;
     transition: all .3s ease-in-out;
+  }
+
+  
+  .container{
+    background-color: lightblue;
+    text-align: center;
+    
+  }
+
+
+  /* Styling the text-input area */
+  #inputOne{
+    width: 600px;
+    line-height: 60px;
+    border-radius: 15px;
+    
+  }
+
+  #inputTwo{
+    width: 600px;
+    line-height: 60px;
+    border-radius: 15px;
+  }
+
+  #inputThree{
+    width: 600px;
+    line-height: 60px;
+    border-radius: 15px;
+  }
+  #inputFour{
+    width: 600px;
+    line-height: 60px;
+    border-radius: 15px;
+  }
+  #inputFive{
+    width: 600px;
+    line-height: 60px;
+    border-radius: 15px;
+  }
+  #inputSix{
+    width: 600px;
+    line-height: 60px;
+    border-radius: 15px;
+  }
+  #inputSeven{
+    width: 600px;
+    line-height: 60px;
+    border-radius: 15px;
+  }
+  #inputEight{
+    width: 600px;
+    line-height: 60px;
+    border-radius: 15px;
+  }
+  #inputNine{
+    width: 600px;
+    line-height: 60px;
+    border-radius: 15px;
+  }
+  #inputTen{
+    width: 600px;
+    line-height: 60px;
+    border-radius: 15px;
+  }
+  #inputEleven{
+    width: 600px;
+    line-height: 60px;
+    border-radius: 15px;
+  }
+  #inputTwelve{
+    width: 600px;
+    line-height: 60px;
+    border-radius: 15px;
+  }
+
+  button{
+    font-size: 25px;
+    border-radius: 25px;
+    color: #d40b00;
   }
