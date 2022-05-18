@@ -1,12 +1,12 @@
-// Display Date & Time on Page 
+        // Display Date & Time on Page 
 const date = new Date();
 const displayDate = document.querySelector("#currentDay").innerHTML = date.toUTCString();
 // let localstorageArr=[]
-let storedInput = localStorage.getItem(); // How we get somthing from local storage.
-//targetting the input field for input 1
+        //targetting the input field for input 1
 let btnOneInput = document.querySelector("#inputOne.input1");
 
 
+// let storedInput = localStorage.getItem(); // How we get something from local storage.
 
 
 
@@ -20,50 +20,44 @@ btnOne.addEventListener("click",btnFunc )
         event.preventDefault();
         console.log(btnOneInput.value)
 
-        // let data =  JSON.parse(localStorage.getItem(inputValue))
 
                     // Validaing inPut
                 if(btnOneInput.value) {
                 console.log("WORKKSSKSKS ")
-
-    }
+         }
             else {
                 window.alert(" Enter Event Before Saving ")
             }
-                // Setting up the local Storage Settings 
+            
+               // Properties for local Storage 
                 let input = btnOneInput.value;
-            localStorage.setItem('inputValue', input)
-    
+                
+                localStorage.setItem('inputValue', input)
+                let storedInput = localStorage.getItem(btnFunc);
+
             for(let i=0; i < localStorage.length; i++){
                 const key = localStorage.key(i)
                 const value =localStorage.getItem(key);
                     } 
-    getItem();
-                    
+    retriveItemFromLS();
+             
     }
 
         // Getting items from Local Storage
 
-    function getItem() {
-        if (inputOne.input1.value === "") {
+    function retriveItemFromLS() {
+        if (storedInput ) {
             window.alert('0');
         }
 
-        // else {
+        
+    //     // else {
 
-        //      (   )
-        // }
+    //     //      (   )
+    //     // }
        
-    }
-
-
-
-// localStorage.getItem('InputValue', input)
  
-        // let input = btnOneInput.value;
-        //  localStorage.setItem('InputValue', input)
+    // }
 
-        // for(let i=0; i < localStorage.length; i++){
-        //     const key = localStorage.key(i)
-        //     const value =localStorage.getItem(key);
-        // } 
+
+    }
