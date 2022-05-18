@@ -1,13 +1,15 @@
         // Display Date & Time on Page 
 const date = new Date();
 const displayDate = document.querySelector("#currentDay").innerHTML = date.toUTCString();
-// let localstorageArr=[]
+let localstorageArr=['inputOne','inputTo','inputThree','inputFour','inputFive','inputSix','inputSeven','inputEight','inputNine',]
 
         //targetting the input field for input 1
 let btnOneInput = document.querySelector("#inputOne.input1");
 
         //  How we get something from local storage.
-let storedInput = localStorage.getItem("inputValue");
+// let storedInput = localStorage.getItem("inputValue");
+
+
 
 
 
@@ -20,6 +22,9 @@ btnOne.addEventListener("click",btnFunc )
         event.preventDefault();
         console.log(btnOneInput.value)
 
+    for (let i = 0; i < localstorageArr.length; i++) {
+                        let storedData = localstorageArr[i];
+                        
 
                     // Validaing inPut
                 if(btnOneInput.value) {
@@ -34,11 +39,13 @@ btnOne.addEventListener("click",btnFunc )
                 
                 localStorage.setItem('inputValue', input)
                 // let storedInput = localStorage.getItem(btnFunc);
+                let storedInput = localStorage.getItem('inputValue');
 
-            for(let i=0; i < localStorage.length; i++){
-                const key = localStorage.key(i)
-                const value =localStorage.getItem(key);
-                    } 
+                
+                    storedData.localStorage.getItem(localstorageArr[i])
+                }
+
+           
     retriveItemFromLS();
              
    
@@ -48,6 +55,8 @@ btnOne.addEventListener("click",btnFunc )
         if (storedInput ) {
             input.textcontent = storedInput;
         }
+
+        
  }
         
     //     // else {
