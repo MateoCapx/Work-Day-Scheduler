@@ -1,33 +1,31 @@
         // Display Date & Time on Page 
 const date = new Date();
 const displayDate = document.querySelector("#currentDay").innerHTML = date.toUTCString();
-let localstorageArr=['inputOne','inputTo','inputThree','inputFour','inputFive','inputSix','inputSeven','inputEight','inputNine',]
+let localstorageArr=['inputOne','inputTwo','inputThree','inputFour','inputFive','inputSix','inputSeven','inputEight','inputNine',]
 
         //targetting the input field for input 1
-let btnOneInput = document.querySelector("#inputOne.input1");
+// let inputOne = document.querySelector("#inputOne.input1");
 
         //  How we get something from local storage.
 // let storedInput = localStorage.getItem("inputValue");
-
-
+let inputOne = document.getElementById("inputOne");
 
 
 
 // Targetting the Save Buttons 
+
 let btnOne = document.querySelector("#btnInput1");
 btnOne.addEventListener("click",btnFunc )
 
 
  function btnFunc( ) {
         event.preventDefault();
-        console.log(btnOneInput.value)
+        console.log(inputOne.value)
 
-    for (let i = 0; i < localstorageArr.length; i++) {
-                        let storedData = localstorageArr[i];
-                        
+
 
                     // Validaing inPut
-                if(btnOneInput.value) {
+                if(inputOne.value) {
                 console.log("WORKKSSKSKS ")
          }
             else {
@@ -35,14 +33,16 @@ btnOne.addEventListener("click",btnFunc )
             }
             
                // Properties for local Storage 
-                let input = btnOneInput.value;
+                let input = inputOne.value;
                 
                 localStorage.setItem('inputValue', input)
                 // let storedInput = localStorage.getItem(btnFunc);
-                let storedInput = localStorage.getItem('inputValue');
-
                 
-                    storedData.localStorage.getItem(localstorageArr[i])
+
+                    for (let i = 0; i < localstorageArr.length; i++) {
+                        let storedData = localstorageArr[i];
+                        
+                    localStorage.getItem(localstorageArr[i])
                 }
 
            
@@ -58,14 +58,11 @@ btnOne.addEventListener("click",btnFunc )
 
         
  }
-        
-    //     // else {
 
-    //     //      (   )
-    //     // }
-       
+
  
-    // }
-
-
     }
+    
+    let storedInput = localStorage.getItem('inputValue');
+    inputOne.innerHTML=storedInput;
+    console.log(inputOne)
