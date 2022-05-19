@@ -6,23 +6,20 @@ const displayDate = document.querySelector("#currentDay").innerHTML = date.toUTC
 // let inputOne = document.querySelector("#inputOne.input1");
 
         //  How we get something from local storage.
-  let inputOne = document.querySelector("#inputOne");
   let storedInput = localStorage.getItem("9AM");
   let storedInput1 = localStorage.getItem("10AM");
   let storedInput2 = localStorage.getItem("11AM");
-  let storedInput3 = localStorage.getItem("12AM");
+  let storedInput3 = localStorage.getItem("12PM");
   let storedInput4 = localStorage.getItem("1PM");
   let storedInput5 = localStorage.getItem("2PM");
   let storedInput6 = localStorage.getItem("3PM");
   let storedInput7 = localStorage.getItem("4PM");
   let storedInput8 = localStorage.getItem("5PM");
-//   let storedInput9 = localStorage.getItem("6PM");
-//   let storedInput10 = localStorage.getItem("7PM");
-//   let storedInput11 = localStorage.getItem("8PM");
-//   let storedInput12 = localStorage.getItem("9PM");
+
   
 
         //Grabbing the input fields
+  let inputOne = document.querySelector("#inputOne");
   let inputTwo = document.querySelector("#inputTwo");
   let inputThree = document.querySelector("#inputThree");
   let inputFour = document.querySelector("#inputFour");
@@ -33,26 +30,26 @@ const displayDate = document.querySelector("#currentDay").innerHTML = date.toUTC
   let inputNine = document.querySelector("#inputNine");
 
 
-//   // Grabbing All the Button input IDs
+//   // Grabbing All the Button input IDs (classes)
   let btnTwo = document.querySelector(".btn2");
-//   let btnThree = document.querySelector(".btn3");
-//   let btnFour = document.querySelector(".btn4");
-//   let btnFive = document.querySelector(".btn5");
-//   let btnSix = document.querySelector(".btn6");
-//   let btnSeven = document.querySelector(".btn7");
-//   let btnEight = document.querySelector(".btn8");
-//   let btnNine = document.querySelector(".btn9");
+  let btnThree = document.querySelector(".btn3");
+  let btnFour = document.querySelector(".btn4");
+  let btnFive = document.querySelector(".btn5");
+  let btnSix = document.querySelector(".btn6");
+  let btnSeven = document.querySelector(".btn7");
+  let btnEight = document.querySelector(".btn8");
+  let btnNine = document.querySelector(".btn9");
  
 
         // Add Event Listeners to all the buttons
   btnTwo.addEventListener("click",btnFunc )
-//   btnThree.addEventListener("click",btnFunc )
-//   btnFour.addEventListener("click",btnFunc )
-//   btnFive.addEventListener("click",btnFunc )
-//   btnSix.addEventListener("click",btnFunc )
-//   btnSeven.addEventListener("click",btnFunc )
-//   btnEight.addEventListener("click",btnFunc )
-//   btnNine.addEventListener("click",btnFunc )
+  btnThree.addEventListener("click",btnFunc )
+  btnFour.addEventListener("click",btnFunc )
+  btnFive.addEventListener("click",btnFunc )
+  btnSix.addEventListener("click",btnFunc )
+  btnSeven.addEventListener("click",btnFunc )
+  btnEight.addEventListener("click",btnFunc )
+  btnNine.addEventListener("click",btnFunc )
   
 
 
@@ -69,7 +66,10 @@ btnOne.addEventListener("click",btnFunc )
         console.log(inputTwo.value)
 
                     // Validaing inPut
-                if(inputOne.value && inputTwo.value && inputThree.value && inputFour.value && inputFive.value) {
+                if(inputOne.value && inputTwo.value && inputThree.value 
+                    && inputFour.value && inputFive.value && inputSix.value 
+                    && inputSeven.value && inputEight.value
+                     && inputNine.value) {
                 console.log("WORKKSSKSKS ")
          }
             else {
@@ -79,19 +79,19 @@ btnOne.addEventListener("click",btnFunc )
                // Properties for local Storage 
                 let input = inputOne.value;
                 let input1 = inputTwo.value;
-                let input2 = inputTwo.value;
-                let input3 = inputTwo.value;
-                let input4 = inputTwo.value;
-                let input5 = inputTwo.value;
-                let input6 = inputTwo.value;
-                let input7 = inputTwo.value;
-                let input8 = inputTwo.value;
-                let input9 = inputTwo.value;
+                let input2 = inputThree.value;
+                let input3 = inputFour.value;
+                let input4 = inputFive.value;
+                let input5 = inputSix.value;
+                let input6 = inputSeven.value;
+                let input7 = inputEight.value;
+                let input8 = inputNine.value;
+               
                 
                 localStorage.setItem('9AM', input)
                 localStorage.setItem('10AM', input1)
                 localStorage.setItem('11AM', input2)
-                localStorage.setItem('12AM', input3)
+                localStorage.setItem('12PM', input3)
                 localStorage.setItem('1PM', input4)
                 localStorage.setItem('2PM', input5)
                 localStorage.setItem('3PM', input6)
@@ -108,6 +108,13 @@ btnOne.addEventListener("click",btnFunc )
             inputOne.value = storedInput;
             inputTwo.value = storedInput1;
             inputThree.value = storedInput2;
+            inputFour.value = storedInput3;
+            inputFive.value = storedInput4;
+            inputSix.value = storedInput5;
+            inputSeven.value = storedInput6;
+            inputEight.value = storedInput7;
+            inputNine.value = storedInput8;
+           
         }
 
         
