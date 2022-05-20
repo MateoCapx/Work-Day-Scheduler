@@ -3,6 +3,7 @@ const date = new Date();
 const displayDate = document.querySelector("#currentDay").innerHTML = date.toUTCString();
 
 
+
         //  How we get something from local storage.
   let storedInput = localStorage.getItem("9AM");
   let storedInput1 = localStorage.getItem("10AM");
