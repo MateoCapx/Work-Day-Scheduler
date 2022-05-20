@@ -132,3 +132,15 @@ btnOne.addEventListener("click",btnFunc )
                         
                 //     localStorage.getItem(localstorageArr[i])
                 // }
+
+
+
+
+                // This to add to this project
+            // Add text field wrapping so that when the user types it automatically 
+            // goes to the next line
+
+
+            // Fix the validation statement 
+
+            // Fix the Time functionality 
