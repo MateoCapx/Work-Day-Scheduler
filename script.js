@@ -62,7 +62,7 @@ btnOne.addEventListener("click",btnFunc )
  function btnFunc() {
         event.preventDefault();
         console.log(inputOne.value)
-        console.log(inputTwo.value)
+        
 
                     // Validaing inPut
                 if(inputOne.value && inputTwo.value && inputThree.value 
@@ -97,6 +97,8 @@ btnOne.addEventListener("click",btnFunc )
                 localStorage.setItem('4PM', input7)
                 localStorage.setItem('5PM', input8)
                
+
+                
              
     }
      retriveItemFromLS()
