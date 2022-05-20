@@ -66,11 +66,7 @@ body {
     color: white;
   }
   
-  .saveBtn i:hover {
-    font-size: 20px;
-    transition: all .3s ease-in-out;
-  }
-
+  
   
   .container{
     background-color: lightblue;
@@ -128,24 +124,230 @@ body {
     line-height: 60px;
     border-radius: 15px;
   }
-  #inputTen{
-    width: 600px;
-    line-height: 60px;
-    border-radius: 15px;
-  }
-  #inputEleven{
-    width: 600px;
-    line-height: 60px;
-    border-radius: 15px;
-  }
-  #inputTwelve{
-    width: 600px;
-    line-height: 60px;
-    border-radius: 15px;
-  }
-
+  
   button{
     font-size: 25px;
     border-radius: 25px;
     color: #d40b00;
   }
+
+
+  /* Media Queries Starts  */
+
+  @media screen and (max-width: 992px) {
+    
+    /* Styling for Save Button */
+    #btnInput{
+      width:600px
+    }
+
+    /* Styling the  Time indicator on top left of screen  */
+  #timeSlot1 {
+  padding-top: 25px;
+  padding-left: 250px;
+  font-size: 25px;
+}
+
+#timeSlot2 {
+  padding-top: 15px;
+  padding-left: 250px;
+  font-size: 25px;
+}
+
+
+#timeSlot3 {
+  padding-top: 15px;
+   padding-left: 250px;
+  font-size: 25px;
+}
+
+#timeSlot4 {
+  padding-top: 15px;
+   padding-left: 250px;
+  font-size: 25px;
+}
+
+#timeSlot5 {
+  padding-top: 15px;
+   padding-left: 250px;
+  font-size: 25px;
+}
+
+#timeSlot6 {
+  padding-top: 15px;
+   padding-left: 250px;
+  font-size: 25px;
+}
+
+#timeSlot7 {
+  padding-top: 15px;
+   padding-left: 250px;
+  font-size: 25px;
+}
+
+#timeSlot8 {
+  padding-top: 15px;
+   padding-left: 250px;
+  font-size: 25px;
+}
+#timeSlot9 {
+  padding-top: 15px;
+   padding-left: 250px;
+  font-size: 25px;
+}
+
+.row{
+  height: 170px;
+
+}
+
+  }
+
+
+
+
+  /* Tablets  */
+  @media screen and (max-width: 766px) {    /* If the Width of the screen is SMALLER than 980px  */
+    
+      
+    /* Styling for Save Button */
+    #btnInput{
+      width:800px
+    }
+
+    /* Styling the  Time indicator on top left of screen  */
+  #timeSlot1 {
+  padding-top: 25px;
+  padding-left: 250px;
+  font-size: 25px;
+}
+
+#timeSlot2 {
+  padding-top: 15px;
+  padding-left: 250px;
+  font-size: 25px;
+}
+
+
+#timeSlot3 {
+  padding-top: 15px;
+   padding-left: 250px;
+  font-size: 25px;
+}
+
+#timeSlot4 {
+  padding-top: 15px;
+   padding-left: 250px;
+  font-size: 25px;
+}
+
+#timeSlot5 {
+  padding-top: 15px;
+   padding-left: 250px;
+  font-size: 25px;
+}
+
+#timeSlot6 {
+  padding-top: 15px;
+   padding-left: 250px;
+  font-size: 25px;
+}
+
+#timeSlot7 {
+  padding-top: 15px;
+   padding-left: 250px;
+  font-size: 25px;
+}
+
+#timeSlot8 {
+  padding-top: 15px;
+   padding-left: 250px;
+  font-size: 25px;
+}
+#timeSlot9 {
+  padding-top: 15px;
+   padding-left: 250px;
+  font-size: 25px;
+}
+
+.row{
+  height: 170px;
+
+}
+
+  }
+
+
+
+
+
+/* moblie screens  */
+   @media screen and (max-width: 480px) {
+      
+    /* Styling for Save Button */
+      #btnInput{
+        width:500px
+      }
+
+      /* Styling the  Time indicator on top left of screen  */
+    #timeSlot1 {
+    padding-top: 25px;
+    padding-left: 200px;
+    font-size: 25px;
+  }
+
+  #timeSlot2 {
+    padding-top: 15px;
+    padding-left: 200px;
+    font-size: 25px;
+  }
+
+
+  #timeSlot3 {
+    padding-top: 15px;
+     padding-left: 200px;
+    font-size: 25px;
+  }
+
+  #timeSlot4 {
+    padding-top: 15px;
+     padding-left: 200px;
+    font-size: 25px;
+  }
+
+  #timeSlot5 {
+    padding-top: 15px;
+     padding-left: 200px;
+    font-size: 25px;
+  }
+
+  #timeSlot6 {
+    padding-top: 15px;
+     padding-left: 200px;
+    font-size: 25px;
+  }
+
+  #timeSlot7 {
+    padding-top: 15px;
+     padding-left: 200px;
+    font-size: 25px;
+  }
+
+  #timeSlot8 {
+    padding-top: 15px;
+     padding-left: 200px;
+    font-size: 25px;
+  }
+  #timeSlot9 {
+    padding-top: 15px;
+     padding-left: 200px;
+    font-size: 25px;
+  }
+
+  .row{
+    height: 170px;
+
+  }
+
+     }     
+      /* End Styling the  Time indicator on top left of screen  */

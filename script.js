@@ -2,8 +2,6 @@
 const date = new Date();
 const displayDate = document.querySelector("#currentDay").innerHTML = date.toUTCString();
 
-        //targetting the input field for input 1
-// let inputOne = document.querySelector("#inputOne.input1");
 
         //  How we get something from local storage.
   let storedInput = localStorage.getItem("9AM");
@@ -55,11 +53,11 @@ const displayDate = document.querySelector("#currentDay").innerHTML = date.toUTC
 
 
 // Targetting the Save Buttons 
-
 let btnOne = document.querySelector("#btnInput");
 btnOne.addEventListener("click",btnFunc )
 
 
+        // Main function - Data Validating , Setting up Local Storage 
  function btnFunc() {
         event.preventDefault();
         console.log(inputOne.value)
@@ -87,7 +85,7 @@ btnOne.addEventListener("click",btnFunc )
                 let input7 = inputEight.value;
                 let input8 = inputNine.value;
                
-                
+                // Placing items into Local Storage
                 localStorage.setItem('9AM', input)
                 localStorage.setItem('10AM', input1)
                 localStorage.setItem('11AM', input2)
@@ -122,6 +120,7 @@ btnOne.addEventListener("click",btnFunc )
 
 
 
+                            // Another way to code this project 
 
 // let localstorageArr=['inputOne','inputTwo','inputThree','inputFour','inputFive','inputSix','inputSeven','inputEight','inputNine',]
 
