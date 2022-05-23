@@ -65,10 +65,7 @@ btnOne.addEventListener("click",btnFunc )
         
 
                     // Validaing inPut
-                if(inputOne.value && inputTwo.value && inputThree.value 
-                    && inputFour.value && inputFive.value && inputSix.value 
-                    && inputSeven.value && inputEight.value
-                     && inputNine.value) {
+                if(inputOne.value && inputTwo.value ) {
                 console.log("WORKKSSKSKS ")
          }
             else {
